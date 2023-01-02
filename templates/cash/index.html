@@ -1,0 +1,795 @@
+{% extends 'cash/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <!--Jumbotron section STARTS-->
+    <div class="container-fluid px-5 py-5" id="jumbotron"> 
+        <div class="row">
+            <div class="col-lg-5">
+                <span>TRADE FOREX, CFD</span>
+                <h1>When markets are volatile, you need a broker you can trust</h1>
+                <p>Globalfoxtrade Exchange provides its customers with the most advanced platform for Options and CFD trading with chat. The platform is available in three versions: Web, Android and iPhone.</p>
+                <a href="#" role="button" class="btn btn-main">Sign Up ></a>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="hero-currency">
+                    <div class="currency-convert card py-3 px-3" style="width: 18rem;">
+                        <h5>Currency Convertor</h5>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">I'd like to exchange</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="$100">
+                        </div>
+                        <div class="mb-3">
+                            <label for="form-select" class="form-label">Country From</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>EUR - Euro</option>
+                                <option value="1">USD - US Dollar</option>
+                                <option value="2">EUR - EURO</option>
+                                <option value="3">CAD - Canadian Dollar</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="form-select" class="form-label">Country To</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>USD - US Dollar</option>
+                                <option value="1">USD - US Dollar</option>
+                                <option value="2">EUR - EURO</option>
+                                <option value="3">CAD - Canadian Dollar</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 fullCenter">
+                            <a href="#" class="btn btn-big btn-main">Convert Now</a>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="hero-img">
+                    <img src="{% static 'pictures/hero-img-1.png' %}" class="img-fluid" alt="">
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Jumbotron section ENDS-->
+
+    <!--MPTP section STARTS-->
+    <div class="container-fluid" id="mptp">
+      <div class="row px-5 py-5">
+        <div class="col-lg-12 fullCenter">
+          <div class="">
+            <span>MOST POPULAR TRADING PLATFORM</span>
+            <h2>Just 3 steps to Your Success!</h2>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="feature-icon feature-icon style1">
+                <i class="far fa-user-circle"></i>
+              </div>
+              <h3>Register and get a Gift!</h3>
+              <a href="#" role="button" type="button" class="btn btn-main">Get Started ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="feature-icon feature-icon style1">
+                <i class="far fa-dollar-sign"></i>
+              </div>
+              <h3>Fund your trading account and start earning!</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="feature-icon feature-icon style1">
+                <i class="far fa-bell"></i>
+              </div>
+              <h3>Predict market direction and earn!</h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--MPTP section ENDS-->
+
+    <!--ABOUT section STARTS-->
+    <div class="container-fluid" id="about">
+      <div class="row py-5 px-3">
+        <div class="col-lg-6">
+          <img src="{% static 'pictures/about.png' %}" class="img-fluid" alt="">
+        </div>
+
+
+        <div class="col-lg-6">
+          <div class="col-lg-12">
+            <span>About Us</span>
+            <h2>Trade on the go</h2>
+            <p>
+              Access more than 50 technical tools, including 32 overlay indicators, 11 drawing tools and 9 chart types with our apps for iOS and Android.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-2">
+              <div class="feature-item">
+                <div class="feature-icon style1">
+                  <i class="far fa-share-square"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-10">
+              <div class="feature-item">
+                <div class="feature-text">
+                  <h3>Share CFD'S</h3>
+                  <p>Start trading popular EU share CFDs, including Adidas, Santander, Lufthansa, Deutsche Bank and Porsche..</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-2">
+              <div class="feature-item">
+                <div class="feature-icon style1">
+                  <i class="far fa-clock"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-10">
+              <div class="feature-item">
+                <div class="feature-text">
+                  <h3>Welcome Bonus</h3>
+                  <p>Earn 50% of your initial deposit, up to a maximum of US$5,000, when you open and fund your account. You need to deposit at least US$25 to qualify.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-2">
+              <div class="feature-item">
+                <div class="feature-icon style1">
+                  <i class="fas fa-cog"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-10">
+              <div class="feature-item">
+                <div class="feature-text">
+                  <h3>Account features and benefits</h3>
+                  <p>Our trading account offers a range of benefits, including institutional-grade execution, 24-hour support and a host of advanced features.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="row">
+              <a href="#" class="btn btn-main">Get Started > </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--ABOUT section ENDS-->
+
+    <!--Live exchange rates section STARTS-->
+    <div class="container mb-5" id="live-trading">
+      <div class="row">
+        <div class="col-lg-6 text-center justify-content-center live-trading-header">
+          <span>LIVE EXCHANGE RATES</span>
+          <h2>Trade Currencies Across The World In Real Time With Lowest Fees</h2>
+        </div>
+        
+        <div class="col-lg-10 col-sm-12">
+          <!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener" target="_blank"><span class="blue-text">Financial Markets</span></a> by SuperForexTrade</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+            {
+            "width": 770,
+            "height": 450,
+            "symbolsGroups": [
+              {
+                "name": "Indices",
+                "originalName": "Indices",
+                "symbols": [
+                  {
+                    "name": "FOREXCOM:SPXUSD",
+                    "displayName": "S&P 500"
+                  },
+                  {
+                    "name": "FOREXCOM:NSXUSD",
+                    "displayName": "US 100"
+                  },
+                  {
+                    "name": "FOREXCOM:DJI",
+                    "displayName": "Dow 30"
+                  },
+                  {
+                    "name": "INDEX:NKY",
+                    "displayName": "Nikkei 225"
+                  },
+                  {
+                    "name": "INDEX:DEU40",
+                    "displayName": "DAX Index"
+                  },
+                  {
+                    "name": "FOREXCOM:UKXGBP",
+                    "displayName": "UK 100"
+                  }
+                ]
+              },
+              {
+                "name": "Futures",
+                "originalName": "Futures",
+                "symbols": [
+                  {
+                    "name": "CME_MINI:ES1!",
+                    "displayName": "S&P 500"
+                  },
+                  {
+                    "name": "CME:6E1!",
+                    "displayName": "Euro"
+                  },
+                  {
+                    "name": "COMEX:GC1!",
+                    "displayName": "Gold"
+                  },
+                  {
+                    "name": "NYMEX:CL1!",
+                    "displayName": "Crude Oil"
+                  },
+                  {
+                    "name": "NYMEX:NG1!",
+                    "displayName": "Natural Gas"
+                  },
+                  {
+                    "name": "CBOT:ZC1!",
+                    "displayName": "Corn"
+                  }
+                ]
+              },
+              {
+                "name": "Bonds",
+                "originalName": "Bonds",
+                "symbols": [
+                  {
+                    "name": "CME:GE1!",
+                    "displayName": "Eurodollar"
+                  },
+                  {
+                    "name": "CBOT:ZB1!",
+                    "displayName": "T-Bond"
+                  },
+                  {
+                    "name": "CBOT:UB1!",
+                    "displayName": "Ultra T-Bond"
+                  },
+                  {
+                    "name": "EUREX:FGBL1!",
+                    "displayName": "Euro Bund"
+                  },
+                  {
+                    "name": "EUREX:FBTP1!",
+                    "displayName": "Euro BTP"
+                  },
+                  {
+                    "name": "EUREX:FGBM1!",
+                    "displayName": "Euro BOBL"
+                  }
+                ]
+              },
+              {
+                "name": "Forex",
+                "originalName": "Forex",
+                "symbols": [
+                  {
+                    "name": "FX:EURUSD",
+                    "displayName": "EUR/USD"
+                  },
+                  {
+                    "name": "FX:GBPUSD",
+                    "displayName": "GBP/USD"
+                  },
+                  {
+                    "name": "FX:USDJPY",
+                    "displayName": "USD/JPY"
+                  },
+                  {
+                    "name": "FX:USDCHF",
+                    "displayName": "USD/CHF"
+                  },
+                  {
+                    "name": "FX:AUDUSD",
+                    "displayName": "AUD/USD"
+                  },
+                  {
+                    "name": "FX:USDCAD",
+                    "displayName": "USD/CAD"
+                  }
+                ]
+              }
+            ],
+            "showSymbolLogo": true,
+            "colorTheme": "light",
+            "isTransparent": false,
+            "locale": "en"
+          }
+            </script>
+          </div>
+          <!-- TradingView Widget END -->
+        </div>
+      </div>
+    </div>
+    <!--Live exchange rates section ENDS-->
+
+    <!--Trading Services section STARTS-->
+    <div class="container mb-5" id="trading-services">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="col-lg-12">
+            <span>SUPERFOREXTRADE CURRENCY TOOLS</span>
+            <h2>We Provide Trading Services World Wide</h2>
+            <p>
+              The tools you need to reach your trading potential.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-2">
+              <div class="feature-item">
+                <div class="trading-services-icon style2">
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-10">
+              <div class="feature-item">
+                <div class="feature-text">
+                  <h3>Razor sharp spreads</h3>
+                  <p>Trade FX from 0.0 pip spreads on 14 pairs with our Razor account, with deep liquidity and no requotes</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-2">
+              <div class="feature-item">
+                <div class="trading-services-icon style2">
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-10">
+              <div class="feature-item">
+                <div class="feature-text">
+                  <h3>Fast & reliable</h3>
+                  <p>Fast execution, 99.95% fill rate*, and no dealing desk intervention</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-2">
+              <div class="feature-item">
+                <div class="trading-services-icon style2">
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-10">
+              <div class="feature-item">
+                <div class="feature-text">
+                  <h3>Many CFDS To Trade</h3>
+                  <p>FX, Indices, Commodities,Cryptocurencies Shares and more</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 wh-wrap style1">
+          <div class="row align-items-end">
+            <div class="col-lg-6 wh-img-wrap">
+              <div class="wh-img">
+                <img src="{% static 'pictures/shape-7.png' %}" class="img-fluid wh-shape-one bounce" alt="">
+                <img src="{% static 'pictures/appendix.png' %}" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-lg-6 wh-img-wrap">
+              <div class="wh-img">
+                <img src="{% static 'pictures/wh-img-2.jpg' %}" class="img-fluid" alt="">
+              </div>
+              <div class="wh-img mt-2">
+                <img src="{% static 'pictures/wh-img-3.jpg' %}" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Trading Services section STARTS-->
+
+    <!--Markets section STARTS-->
+    <div class="container-fluid mb-5">
+      <div class="row">
+        <div class="col-lg-12">
+          <!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener" target="_blank"><span class="blue-text">Markets</span></a> by SuperForexTrade</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+            {
+            "symbols": [
+              {
+                "proName": "FOREXCOM:SPXUSD",
+                "title": "S&P 500"
+              },
+              {
+                "proName": "FOREXCOM:NSXUSD",
+                "title": "US 100"
+              },
+              {
+                "proName": "FX_IDC:EURUSD",
+                "title": "EUR/USD"
+              },
+              {
+                "proName": "BITSTAMP:BTCUSD",
+                "title": "Bitcoin"
+              },
+              {
+                "proName": "BITSTAMP:ETHUSD",
+                "title": "Ethereum"
+              }
+            ],
+            "showSymbolLogo": true,
+            "colorTheme": "light",
+            "isTransparent": false,
+            "displayMode": "adaptive",
+            "locale": "en"
+          }
+            </script>
+          </div>
+          <!-- TradingView Widget END -->
+        </div>        
+      </div>
+    </div>
+    <!--Markets section ENDS-->
+
+    <!--Main features section STARTS-->
+    <div class="container mb-5" id="main-features">
+      <div class="row">
+        <div class="col-lg-6 text-center justify-content-center live-trading-header mb-5">
+          <span>MAIN FEATURES</span>
+          <h2>We Care Very Much About Our Customer Satisfaction</h2>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="main-features-icon mb-2">
+                <i class="far fa-eye-slash"></i>
+              </div>
+              <h3 class="card-title">Secured Payment Service</h3>
+              <ul>
+                <li class="mb-2"><i class="far fa-check-circle"></i> Super Secured</li>
+                <li><i class="far fa-check-circle"></i> No Slippage</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="main-features-icon mb-2">
+                <i class="far fa-chart-bar"></i>
+              </div>
+              <h3 class="card-title">Low Cost &amp; Fast Exchange</h3>
+              <ul>
+                <li class="mb-2"><i class="far fa-check-circle"></i> Accountability</li>
+                <li><i class="far fa-check-circle"></i> Fast Trade Execution</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="main-features-icon mb-2">
+                <i class="far fa-bell"></i>
+              </div>
+              <h3 class="card-title">Real Time Trade Tracking</h3>
+              <ul>
+                <li class="mb-2"><i class="far fa-check-circle"></i> 24 Hours Trade Tracking</li>
+                <li><i class="far fa-check-circle"></i> Real Time Trade View</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Main features section STARTS-->
+
+    <!--Currency section STARTS-->
+    <div class="container mb-5" id="currency">
+      <div class="row">
+        <div class="col-lg-12 text-center my-5">
+          <span>CURRENCY PROFILE</span>
+        </div>
+
+        <div class="col-lg-4 mb-3">
+          <div class="card">
+            <div class="row px-2 py-2">
+              <div class="col-lg-3 currency-img">
+                <img src="{% static 'pictures/usa.png' %}" class="" alt="">
+              </div>
+              <div class="col-lg-9 currency-symbol">
+                <h3>USD - US Dollar</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-3">
+          <div class="card">
+            <div class="row px-2 py-2">
+              <div class="col-lg-3 currency-img">
+                <img src="{% static 'pictures/eu.png' %}" class="" alt="">
+              </div>
+              <div class="col-lg-9 currency-symbol">
+                <h3>EUR - EURO</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-3">
+          <div class="card">
+            <div class="row px-2 py-2">
+              <div class="col-lg-3 currency-img">
+                <img src="{% static 'pictures/uk.png' %}" class="" alt="">
+              </div>
+              <div class="col-lg-9 currency-symbol">
+                <h3>GBP - British Pound</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-3">
+          <div class="card">
+            <div class="row px-2 py-2">
+              <div class="col-lg-3 currency-img">
+                <img src="{% static 'pictures/canada.png' %}" class="" alt="">
+              </div>
+              <div class="col-lg-9 currency-symbol">
+                <h3>CAD - Canadian Dollar</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-3">
+          <div class="card">
+            <div class="row px-2 py-2">
+              <div class="col-lg-3 currency-img">
+                <img src="{% static 'pictures/australia.png' %}" class="" alt="">
+              </div>
+              <div class="col-lg-9 currency-symbol">
+                <h3>AUD - AUS Dollar</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-3">
+          <div class="card">
+            <div class="row px-2 py-2">
+              <div class="col-lg-3 currency-img">
+                <img src="{% static 'pictures/japan.png' %}" class="" alt="">
+              </div>
+              <div class="col-lg-9 currency-symbol">
+                <h3>JPY - Japanese Yen</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-3">
+          <div class="card">
+            <div class="row px-2 py-2">
+              <div class="col-lg-3 currency-img">
+                <img src="{% static 'pictures/india.png' %}" class="" alt="">
+              </div>
+              <div class="col-lg-9 currency-symbol">
+                <h3>INR - Indian Rupee</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-3">
+          <div class="card">
+            <div class="row px-2 py-2">
+              <div class="col-lg-3 currency-img">
+                <img src="{% static 'pictures/newzland.png' %}" class="" alt="">
+              </div>
+              <div class="col-lg-9 currency-symbol">
+                <h3>NZD - NZ Dollar</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-3">
+          <div class="card">
+            <div class="row px-2 py-2">
+              <div class="col-lg-3 currency-img">
+                <img src="{% static 'pictures/france.png' %}" class="" alt="">
+              </div>
+              <div class="col-lg-9 currency-symbol">
+                <h3>CHF - Swiss Franc</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Currency section ENDS-->
+
+    <!--Review section STARTS-->
+    <div class="container mb-5" id="reviews"> 
+      <div class="row">
+        <div class="col-lg-6 text-center justify-content-center live-trading-header my-5">
+          <span>OUR REVIEWS</span>
+          <h3>More Than 20,000+ Happy Customers Trust Our Services</h3>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide card">
+              <div class="testimonial-item px-4 py-4" data-aos="fade-up">
+                <div class="row">
+                  <div class="col-lg-3 review-img">
+                    <img src="{% static 'pictures/client-1.jpg' %}" class="" alt="">
+                  </div>
+                  <div class="col-lg-9 review-info">
+                    <h4>Harry Jackson</h4>
+                    <h7 class="client-info">Entrepreneur</h7>
+                  </div>
+                  <div class="col-lg-12">
+                    <i class="fas fa-quote-left"></i>
+                  </div>
+                  <div class="col-lg-12">
+                    <p>My account manager, the customer service and the brokers are all patient and knwledgeable. Thumbs up for this broker company. SOme minor misses such as slippage but very minimal</p>
+                  </div>
+                  <div class="col-lg-12">
+                    <i class="fas fa-quote-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide card">
+              <div class="testimonial-item px-4 py-4" data-aos="fade-up">
+                <div class="row">
+                  <div class="col-lg-3 review-img">
+                    <img src="{% static 'pictures/client-2.jpg' %}" class="" alt="">
+                  </div>
+                  <div class="col-lg-9 review-info">
+                    <h4>Chris Harris</h4>
+                    <h7 class="client-info">MD, ITec</h7>
+                  </div>
+                  <div class="col-lg-12">
+                    <i class="fas fa-quote-left"></i>
+                  </div>
+                  <div class="col-lg-12">
+                    <p>Fast withdrawals for the past six months. Great services and professional brokers too. Confusing softwaree but there is comprehensive training anyway.</p>
+                  </div>
+                  <div class="col-lg-12">
+                    <i class="fas fa-quote-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide card">
+              <div class="testimonial-item px-4 py-4" data-aos="fade-up">
+                <div class="row">
+                  <div class="col-lg-3 review-img">
+                    <img src="{% static 'pictures/client-3.jpg' %}" class="" alt="">
+                  </div>
+                  <div class="col-lg-9 review-info">
+                    <h4>Jim Morison</h4>
+                    <h7 class="client-info">Director, BAT</h7>
+                  </div>
+                  <div class="col-lg-12">
+                    <i class="fas fa-quote-left"></i>
+                  </div>
+                  <div class="col-lg-12">
+                    <p>Customer services are friendly and attentive. They are also knowledgeable, in fact, they can guide with trading concerns. I got good training tools too</p>
+                  </div>
+                  <div class="col-lg-12">
+                    <i class="fas fa-quote-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide card">
+              <div class="testimonial-item px-4 py-4" data-aos="fade-up">
+                <div class="row">
+                  <div class="col-lg-3 review-img">
+                    <img src="{% static 'pictures/client-4.jpg' %}" class="" alt="">
+                  </div>
+                  <div class="col-lg-9 review-info">
+                    <h4>Alex Cruis</h4>
+                    <h7 class="client-info">CEO, IBAC</h7>
+                  </div>
+                  <div class="col-lg-12">
+                    <i class="fas fa-quote-left"></i>
+                  </div>
+                  <div class="col-lg-12">
+                    <p>They have provided me with top-quality services. I was not expecting to get this much profit from them. Excellent deals are offered.</p>
+                  </div>
+                  <div class="col-lg-12">
+                    <i class="fas fa-quote-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide card">
+              <div class="testimonial-item px-4 py-4" data-aos="fade-up">
+                <div class="row">
+                  <div class="col-lg-3 review-img">
+                    <img src="{% static 'pictures/client-5.jpg' %}" class="" alt="">
+                  </div>
+                  <div class="col-lg-9 review-info">
+                    <h4>Tom Harris</h4>
+                    <h7 class="client-info">Engineer, Olleo</h7>
+                  </div>
+                  <div class="col-lg-12">
+                    <i class="fas fa-quote-left"></i>
+                  </div>
+                  <div class="col-lg-12">
+                    <p>Respected and trustworthy broker company. I have been with with them for a few months and have decided to keep the services. Well, I got a good profit from the trades and was able to withdraw it promptly.</p>
+                  </div>
+                  <div class="col-lg-12">
+                    <i class="fas fa-quote-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <!--Review section ENDS-->
+
+{% endblock %}

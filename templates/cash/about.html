@@ -1,0 +1,544 @@
+{% extends 'cash/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!--Jumbotron section STARTS-->
+    <div class="container-fluid" id="about-jumbotron">
+        <div class="row">
+            <div class="col-lg-12 p-c">
+                <div class="container" id="jumbotron-text">
+                    <h2 class="align-middle">About Us</h2>
+                </div>
+                <div class="container" id="jumbotron-text">
+                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{% url 'homepage' %}">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                        </ol>
+                    </nav> 
+                </div>           
+            </div>
+        </div>
+    </div>
+<!--Jumbotron section ENDS-->
+
+<!--100k clients section STARTS-->
+    <div class="container my-5" id="usedBy">
+        <div class="row">  
+            <div class="col-lg-12 text-center">
+                <h2>Used By 100K+ Clients For Trading</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener" target="_blank"><span class="blue-text">Markets</span></a> by TradingView</div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                    {
+                    "symbols": [
+                    {
+                        "proName": "FOREXCOM:SPXUSD",
+                        "title": "S&P 500"
+                    },
+                    {
+                        "proName": "FOREXCOM:NSXUSD",
+                        "title": "US 100"
+                    },
+                    {
+                        "proName": "FX_IDC:EURUSD",
+                        "title": "EUR/USD"
+                    },
+                    {
+                        "proName": "BITSTAMP:BTCUSD",
+                        "title": "Bitcoin"
+                    },
+                    {
+                        "proName": "BITSTAMP:ETHUSD",
+                        "title": "Ethereum"
+                    }
+                    ],
+                    "showSymbolLogo": true,
+                    "colorTheme": "light",
+                    "isTransparent": false,
+                    "displayMode": "adaptive",
+                    "locale": "en"
+                }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+        </div>
+    </div>
+<!--100k clients section ENDS-->
+
+<!--About us section STARTS-->
+    <div class="container my-5" id="aboutUs">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-6 about-img-wrap">
+                        <div class="about-img">
+                            <img src="{% static 'pictures/about-img-1.jpg' %}" alt="">
+                        </div>
+
+                        <div class="about-img">
+                            <img src="{% static 'pictures/about-img-2.jpg' %}" alt="">
+                        </div>
+
+                        <img src="{% static 'pictures/about-shape-4.png' %}" alt="" class="about-shape-one bounce">
+                        
+                    </div>
+
+                    <div class="col-lg-6 about-img-wrap lgm-70">
+                        <img src="{% static 'pictures/shape-1.png' %}" alt="" class="about-shape-two moveHorizontal">
+
+                        <div class="about-img">
+                            <img src="{% static 'pictures/about-img-3.jpg' %}" alt="">
+                        </div>
+
+                        <div class="about-img">
+                            <img src="{% static 'pictures/about-img-4.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="col-lg-12">
+                    <span>About Us</span>
+                    <h2>Why SuperForexTrade?</h2>
+                    <p>
+                        GlobalfoxTrade was founded in 2021, with the primary mission to empower people to trade with confidence. With strong core values of integrity and innovation, we always put the customer first, and center all our efforts into enabling traders of all levels to unleash their true potential. Whether it is our customer service, diversity of instruments and variety of platforms or any of our other superior services - we work hard to ensure our clients have a pleasant trading experience. Trade with the licensed and award-winning broker. Open an account today and enjoy features and the full benefits that GlobalfoxTrade has to offer.
+                    </p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-2">
+                      <div class="feature-item">
+                        <div class="feature-icon style1">
+                          <i class="far fa-hand-pointer"></i>
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="col-lg-10">
+                      <div class="feature-item">
+                        <div class="feature-text">
+                          <h3>Why More Traders Choose Us?</h3>
+                          <p>For over 15 years, GlobalfoxTrade has established itself as a major player in the online broker financial field, with a proven track record of positive customer satisfaction. Our key responsibility is to offer top notch services to all our traders.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="row">
+                    <div class="col-lg-2">
+                      <div class="feature-item">
+                        <div class="feature-icon style1">
+                          <i class="far fa-clock"></i>
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="col-lg-10">
+                      <div class="feature-item">
+                        <div class="feature-text">
+                          <h3>Trading Ambitions</h3>
+                          <p>GlobalfoxTrade has established a 3-stage process that our traders can join at any level, with respect to their experience and ambitions. The goal is to provide first class education, timely and actionable information on events that are affecting global markets</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="row">
+                    <div class="col-lg-2">
+                      <div class="feature-item">
+                        <div class="feature-icon style1">
+                          <i class="fas fa-cog"></i>
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="col-lg-10">
+                      <div class="feature-item">
+                        <div class="feature-text">
+                          <h3>Client satisfaction</h3>
+                          <p>Client satisfaction has been our top priority since the very beginning. We aim not only to provide excellent customer support, but also on listening to clients' feedback carefully. Many wonderful ideas were inspired by our customers. By the traders and for the traders!.</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--About us section ENDS-->
+
+<!--MPTP section STARTS-->
+    <div class="container-fluid" id="mptp">
+    <div class="row px-5 py-5">
+      <div class="col-lg-12 fullCenter mb-4">
+        <div class="">
+          <span>MOST POPULAR TRADING PLATFORM</span>
+          <h2>Just 3 steps to Your Success!</h2>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <div class="feature-icon feature-icon style1">
+              <i class="far fa-user-circle"></i>
+            </div>
+            <h3>Register and get a Gift!</h3>
+            <a href="#" role="button" type="button" class="btn btn-main">Get Started ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <div class="feature-icon feature-icon style1">
+              <i class="far fa-dollar-sign"></i>
+            </div>
+            <h3>Fund your trading account and start earning!</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <div class="feature-icon feature-icon style1">
+              <i class="far fa-bell"></i>
+            </div>
+            <h3>Predict market direction and earn!</h3>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+<!--MPTP section ENDS-->
+
+<!--Advantages section STARTS-->
+    <div class="container mb-5" id="advantages">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="col-lg-12">
+                    <h2>Our advantages</h2>
+                    <p>
+                        There are many reasons why clients choose Us, but these 7 points make our offer really unique.
+                    </p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="feature-item">
+                            <div class="trading-services-icon style2">
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-10">
+                        <div class="feature-item">
+                            <div class="feature-text">
+                                <p>Possibility to trade under experienced trader guidance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="feature-item">
+                            <div class="trading-services-icon style2">
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-10">
+                        <div class="feature-item">
+                            <div class="feature-text">
+                                <p>Guaranteed withdrawals processing within 1 hour.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="feature-item">
+                            <div class="trading-services-icon style2">
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-10">
+                        <div class="feature-item">
+                            <div class="feature-text">
+                                <p>100% secured trading with full data protection.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+
+            <div class="col-lg-6 wh-wrap style3">
+                <div class="wh-img-wrap">
+                    <img src="{% static 'pictures/shape-6.png' %}" alt="" class="wh-shape-one animationFramesTwo">
+                    <img src="{% static 'pictures/wh-img-7.jpg' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+<!--Advantages section ENDS-->
+
+<!--Fun facts section STARTS-->
+    <div class="container mb-4" id="fun">
+        <div class="row">
+            <div class="col-lg-9 benefits-header text-center justify-content-center my-5">
+                <span>SOME FUN FACTS</span>
+                <h2>We Always Try To Understand Customer's Expectation</h2>
+            </div>
+        </div>
+    </div>
+
+<!--Fun facts section ENDS-->
+
+<!-- Counts section STARTS  -->
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-lg-20 counts">
+                <div>
+                    <h2>1 M+</h2>
+                    <span>Executed Trades</span>
+                </div>
+            </div>
+            <div class="col-lg-20 counts">
+                <div>
+                    <h2>10 K+</h2>
+                    <span>Feedback</span>
+                </div>
+            </div>
+            <div class="col-lg-20 counts">
+                <div>
+                    <h2>1 K+</h2>
+                    <span>Workers</span>
+                </div>
+            </div>
+            <div class="col-lg-20 counts">
+                <div>
+                    <h2>10 +</h2>
+                    <span>Years Of Experience</span>
+                </div>
+            </div>
+            <div class="col-lg-20 count">
+                <div>
+                    <h2>30 K+</h2>
+                    <span>Contributors</span>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Counts section ENDS -->
+
+<!-- Benefits section STARTS  -->
+    <div class="container" id="main-features">
+        <div class="row">
+            <div class="col-lg-9 benefits-header text-center justify-content-center my-5">
+                <span>YOUR BENIFITS</span>
+                <h2>The Most Trusted Currency Exchange Is Here For Giving Services</h2>
+            </div>
+
+            <div class="col-lg-4 mb-3">
+              <div class="card">
+                <div class="row px-2 py-2">
+                  <div class="col-lg-3 main-features-icon">
+                    <i class="far fa-eye-slash"></i>
+                  </div>
+                  <div class="col-lg-9">
+                    <h3>Easy Transfer Method</h3>
+                    <p>Wide range of deposits and withdrawal methods</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-3">
+              <div class="card">
+                <div class="row px-2 py-2">
+                  <div class="col-lg-3 main-features-icon">
+                    <i class="far fa-map"></i>
+                  </div>
+                  <div class="col-lg-9">
+                    <h3>Global Coverage</h3>
+                    <p>24/7 customer multilingual support</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-3">
+              <div class="card">
+                <div class="row px-2 py-2">
+                  <div class="col-lg-3 main-features-icon">
+                    <i class="fas fa-cog"></i>
+                  </div>
+                  <div class="col-lg-9">
+                    <h3>Instant Processing</h3>
+                    <p>Non stop trading, even during weekends</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            </div>
+        </div>
+    </div>
+<!-- BENEFITS section ENDS -->
+
+<!--Review section STARTS-->
+ <div class="container mb-5" id="reviews"> 
+    <div class="row">
+      <div class="col-lg-6 text-center justify-content-center live-trading-header my-5">
+        <span>OUR REVIEWS</span>
+        <h2>More Than 20,000+ Happy Customers Trust Our Services</h2>
+      </div>
+
+      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide card">
+            <div class="testimonial-item px-4 py-4" data-aos="fade-up">
+              <div class="row">
+                <div class="col-lg-3 review-img">
+                  <img src="{% static 'pictures/client-1.jpg' %}" class="" alt="">
+                </div>
+                <div class="col-lg-9 review-info">
+                  <h4>Harry Jackson</h4>
+                  <h7 class="client-info">Entrepreneur</h7>
+                </div>
+                <div class="col-lg-12">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <div class="col-lg-12">
+                  <p>My account manager, the customer service and the brokers are all patient and knwledgeable. Thumbs up for this broker company. SOme minor misses such as slippage but very minimal</p>
+                </div>
+                <div class="col-lg-12">
+                  <i class="fas fa-quote-right"></i>
+                </div>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide card">
+            <div class="testimonial-item px-4 py-4" data-aos="fade-up">
+              <div class="row">
+                <div class="col-lg-3 review-img">
+                  <img src="{% static 'pictures/client-2.jpg' %}" class="" alt="">
+                </div>
+                <div class="col-lg-9 review-info">
+                  <h4>Chris Harris</h4>
+                  <h7 class="client-info">MD, ITec</h7>
+                </div>
+                <div class="col-lg-12">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <div class="col-lg-12">
+                  <p>Fast withdrawals for the past six months. Great services and professional brokers too. Confusing softwaree but there is comprehensive training anyway.</p>
+                </div>
+                <div class="col-lg-12">
+                  <i class="fas fa-quote-right"></i>
+                </div>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide card">
+            <div class="testimonial-item px-4 py-4" data-aos="fade-up">
+              <div class="row">
+                <div class="col-lg-3 review-img">
+                  <img src="{% static 'pictures/client-3.jpg' %}" class="" alt="">
+                </div>
+                <div class="col-lg-9 review-info">
+                  <h4>Jim Morison</h4>
+                  <h7 class="client-info">Director, BAT</h7>
+                </div>
+                <div class="col-lg-12">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <div class="col-lg-12">
+                  <p>Customer services are friendly and attentive. They are also knowledgeable, in fact, they can guide with trading concerns. I got good training tools too</p>
+                </div>
+                <div class="col-lg-12">
+                  <i class="fas fa-quote-right"></i>
+                </div>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide card">
+            <div class="testimonial-item px-4 py-4" data-aos="fade-up">
+              <div class="row">
+                <div class="col-lg-3 review-img">
+                  <img src="{% static 'pictures/client-4.jpg' %}" class="" alt="">
+                </div>
+                <div class="col-lg-9 review-info">
+                  <h4>Alex Cruis</h4>
+                  <h7 class="client-info">CEO, IBAC</h7>
+                </div>
+                <div class="col-lg-12">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <div class="col-lg-12">
+                  <p>They have provided me with top-quality services. I was not expecting to get this much profit from them. Excellent deals are offered.</p>
+                </div>
+                <div class="col-lg-12">
+                  <i class="fas fa-quote-right"></i>
+                </div>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide card">
+            <div class="testimonial-item px-4 py-4" data-aos="fade-up">
+              <div class="row">
+                <div class="col-lg-3 review-img">
+                  <img src="{% static 'pictures/client-5.jpg' %}" class="" alt="">
+                </div>
+                <div class="col-lg-9 review-info">
+                  <h4>Tom Harris</h4>
+                  <h7 class="client-info">Engineer, Olleo</h7>
+                </div>
+                <div class="col-lg-12">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <div class="col-lg-12">
+                  <p>Respected and trustworthy broker company. I have been with with them for a few months and have decided to keep the services. Well, I got a good profit from the trades and was able to withdraw it promptly.</p>
+                </div>
+                <div class="col-lg-12">
+                  <i class="fas fa-quote-right"></i>
+                </div>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+<!--Review section ENDS-->
+
+
+{% endblock %}

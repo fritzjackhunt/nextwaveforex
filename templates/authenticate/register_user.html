@@ -1,0 +1,69 @@
+{% extends 'cash/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <link href="{% static 'css/signin.css' %}" rel="stylesheet">
+
+    <style>
+    
+        body {
+            background: #e8f1ee;
+        }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    {% if form.errors %}
+
+        <br><br><br>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            There was an error with your form
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+    {% endif %}
+
+    <body class="text-center">
+        <br><br><br>
+
+        <main class="form-signin">
+
+            <div class="shadow p-3 mb-5 bg-body rounded">
+                <form action="" method=POST>
+                    <br>
+                    <img class="mb-4" src="{% static 'pictures/logo.png' %}" alt="" width="72" height="57">
+
+                    <h1 class="boold">REGISTER</h1>
+
+                    {% csrf_token %}
+
+                    {{ form.as_p }}
+
+                    {{ profile.as_p }}
+
+
+                    <br>
+
+                    <input type="submit" value="Submit" class="btn btn-primary btn-main btn-lg">
+                    
+                    <p class="mt-5 mb-3 text-muted">&copy; NEXTWAVE FOREX 2017-2023</p>
+                </form>
+            </div>
+        </main>
+    </body>
+    
+
+{% endblock %}

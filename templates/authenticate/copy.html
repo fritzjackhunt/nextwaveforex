@@ -1,0 +1,219 @@
+{% extends 'authenticate/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="container-fluid lefft">
+        <div class="card-top">
+            <div class="d-flex justify-content-between">
+                <span>Welcome Back, <strong>{{ request.user.first_name }} {{ request.user.last_name }}</strong></span>
+                <span>User / <strong>Fund Account</strong></span>
+                <hr>
+            </div>
+            <div class="">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="alert alert-primary" role="alert">
+                            <span class="reeed">Notice!</span>
+
+                             <br>
+
+                            Please Note that Minimum Fund Amount is $500. Contact payments@metacoinoptions.com for a more detailed description. Ensure to provide your Funding Code when contacting support. If you encounter any issue while funding your account, please contact payments@metacoinoptions.com for assistance.
+
+                            Your account will be credited once your payment is confirmed.
+
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Pay with Bitcoin</p>
+                        <hr>
+                        <div class="alert alert-primary" role="alert">
+                            <span>Bitcoin Funding is Instant</span>
+
+                            <br>
+
+                            Your account will be credited once your payment is confirmed.
+                            NOTE: If you have problems finding your Transaction Hash ID, Use the last 10 digits of your wallet address as the Transaction Hash ID.
+                            If you encounter any issue while funding your account, please contact payments@metacoinoptions.com for assistance. 
+
+                        </div>
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Username</label>
+                                <input type="text" class="form-control" id="formControlReadonly" aria-label="readonly input example" readonly placeholder="{{ request.user.username }}">
+                            </div>
+                            <label for="amount" class="form-label">Amount</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">$</span>
+                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" id="amount" placeholder="Enter Amount">
+                                <span class="input-group-text">.00</span>
+                            </div>
+                            <label for="amount" class="form-label">Send Payments To:</label>
+                            <div class="form-outline">
+                                <input
+                                    class="form-control"
+                                    id="formControlReadonly"
+                                    type="text"
+                                    placeholder="1GoAjdkcrfnHRv4GeSekDNoLN6BZbWZePd"
+                                    aria-label="readonly input example"
+                                    readonly
+                                />
+                            </div>
+                            <br>
+                            <label for="amount" class="form-label">OR SCAN TO COPY:</label>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 d-flex d-none d-xl-block d-xxl-none">
+                                        <img src="{% static 'pictures/QR code.jpeg' %}">
+                                    </div>
+                                    <div class="col-12 d-flex d-xl-none d-xxl-block">
+                                        <img src="{% static 'pictures/QR code-sm.jpeg' %}">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-outline">
+                                <br>
+                                <label for="amount" class="form-label">Senders Wallet Address:</label>
+                                <input type="text" id="typeText" class="form-control" placeholder="Enter your Wallet Address" />
+                            </div>
+                            <div class="form-outline">
+                                <br>
+                                <label for="amount" class="form-label">Transaction HASH ID:</label>
+                                <input type="text" id="typeText" class="form-control" placeholder="Enter Transaction HASH ID" />
+                            </div>
+                            <div class="mb-3">
+                                <br>
+                                <label for="exampleFormControlTextarea1" class="form-label">Description.</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Enter description (Optional)"></textarea>
+                            </div>
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button class="btn btn-success" type="button">Fund</button>
+                            </div>
+                        </form>
+                    </div>  
+                </div>
+            </div>
+        </div>
+         <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="text-center">FAQ</p>
+                        <hr>
+                        <!-- ======= Profile Section ======= -->
+                        <section id="profile" class="profile">
+                            <div class="container" data-aos="fade-up">
+                                <p>
+                                    <div class="d-grid gap-2">
+                                        <button class="btn btn-primary btn-lg" style="background-color: #131722;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                                            Why Bitcoin?
+                                        </button>
+                                    </div>
+                                </p>
+                                <div class="collapse" id="collapseExample1">
+                                    <div class="card card-body">
+                                        <p>Bitcoin is the fastest way to fund accounts.</P>
+                                    </div>
+                                </div>
+
+                                <p>
+                                    <div class="d-grid gap-2">
+                                        <button class="btn btn-primary btn-lg" style="background-color: #131722;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                                        How long do I wait before my investment start counting?
+                                        </button>
+                                    </div>
+                                </p>
+                                <div class="collapse" id="collapseExample2">
+                                    <div class="card card-body">
+                                        <p>Once your fund is confirmed, your investment starts counting.</p>
+                                    </div>
+                                </div>
+
+                                <p>
+                                    <div class="d-grid gap-2">
+                                        <button class="btn btn-primary btn-lg" style="background-color: #131722;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+                                        What happens to a failed fund transaction?
+                                        </button>
+                                    </div>
+                                </p>
+                                <div class="collapse" id="collapseExample3">
+                                    <div class="card card-body">
+                                        <p>This is rare but we will help sort out any failed transaction. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section><!-- End Services Section -->
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Latest Deposits</p>
+                        <hr>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="col-lg-12 d-flex justify-content-between">
+                            <div>
+                                <p>Fund Amount</p>
+                            </div>
+                            <div>
+                                <p>Fund Code</p>
+                            </div>
+                            <div>
+                                <p>Date</p>
+                            </div>
+                            <div>
+                                <p>Description</p>
+                            </div>
+                            <div>
+                                <p>Status</p>
+                            </div>
+                        </div>
+                        <div class="form-outline">
+                            <input
+                                class="form-control"
+                                id="formControlReadonly"
+                                type="text"
+                                placeholder="No data available in table"
+                                aria-label="readonly input example"
+                                readonly
+                            />
+                            <br>
+                        </div>
+                        <div class="col-lg-12 d-flex justify-content-between">
+                            <div>
+                                <p>Fund Amount</p>
+                            </div>
+                            <div>
+                                <p>Fund Code</p>
+                            </div>
+                            <div>
+                                <p>Date</p>
+                            </div>
+                            <div>
+                                <p>Description</p>
+                            </div>
+                            <div>
+                                <p>Action</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

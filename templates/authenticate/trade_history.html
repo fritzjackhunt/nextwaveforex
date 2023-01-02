@@ -1,0 +1,97 @@
+{% extends 'authenticate/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="container-fluid lefft">
+        <div class="card-top">
+            <div class="d-flex justify-content-between">
+                <span>Welcome Back, <strong>{{ request.user.first_name }} {{ request.user.last_name }}</strong></span>
+                <span>User / <strong>Fund Account</strong></span>
+                <hr>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <i class="fa fa-tachometer" aria-hidden="true">  Overview</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+         <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-12 col-12">
+                        <p>Transactions History</p>
+                        <hr>
+                    </div>
+                    <div class="col-lg-12 d-flex justify-content-between">
+                        <div>
+                            <p>Positions ID</p>
+                        </div>
+                        <div>
+                            <p>Amount Traded</p>
+                        </div>
+                        <div>
+                            <p>Rate</p>
+                        </div>
+                        <div>
+                            <p>Trade Assets</p>
+                        </div>
+                        <div>
+                            <p>Description</p>
+                        </div>
+                        <div>
+                            <p>Won/Lost</p>
+                        </div>
+                        <div>
+                            <p>Execution Date</p>
+                        </div>
+                    </div>
+                    <div class="form-outline">
+                        <input
+                            class="form-control"
+                            id="formControlReadonly"
+                            type="text"
+                            placeholder="No data available in table"
+                            aria-label="readonly input example"
+                            readonly
+                        />
+                        <br>
+                    </div>
+                    <div class="col-lg-12 d-flex justify-content-between">
+                        <div>
+                            <p>Positions ID</p>
+                        </div>
+                        <div>
+                            <p>Amount Traded</p>
+                        </div>
+                        <div>
+                            <p>Rate</p>
+                        </div>
+                        <div>
+                            <p>Trade Assets</p>
+                        </div>
+                        <div>
+                            <p>Description</p>
+                        </div>
+                        <div>
+                            <p>Won/Lost</p>
+                        </div>
+                        <div>
+                            <p>Execution Date</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

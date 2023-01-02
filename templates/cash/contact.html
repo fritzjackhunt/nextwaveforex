@@ -1,0 +1,117 @@
+{% extends 'cash/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!--Jumbotron section STARTS-->
+<div class="container-fluid" id="about-jumbotron">
+    <div class="row">
+        <div class="col-lg-12 p-c">
+            <div class="container" id="jumbotron-text">
+                <h2 class="align-middle">About Us</h2>
+            </div>
+            <div class="container" id="jumbotron-text">
+                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{% url 'homepage' %}">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                    </ol>
+                </nav> 
+            </div>           
+        </div>
+    </div>
+</div>
+<!--Jumbotron section ENDS-->
+
+
+<!--Details section STARTS-->
+<div class="container pt-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-4">
+            <div class="contact-item">
+                <span class="contact-icon">
+                    <i class="fas fa-location-arrow"></i>
+                </span>
+                <div class="contact-info">
+                    <h3>Our Location</h3>
+                    <p>184,182 High St N, London E6 2JA, United Kingdom</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="contact-item">
+                <span class="contact-icon">
+                    <i class="fas fa-location-arrow"></i>
+                </span>
+                <div class="contact-info">
+                    <h3>Email Us</h3>
+                    <a href="mailto:support@nextwaveforex.com">support@nextwaveforex.com</a><br>
+                    <a href="mailto:support@nextwaveforex.com">support@nextwaveforex.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Details section ENDS-->
+
+<!--Contact form section STARTS-->
+<div class="container pb-4">
+    <div class="row">
+        <div class="col-lg-7">
+            <form class="form-wrap" id="contactForm" novalidate="true">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Name" required data-error="Please enter your name">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="email" placeholder="Email" required data-error="Please enter your email">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="phone_number" placeholder="Phone" id="phone_number" required data-error="Please enter your phone number">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="msg_subject" placeholder="Subject" id="msg_subject" required data-error="Please enter your subject">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" id="" cols="30" rows="10" required data-error="Please enter your message"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <button type="button" class="btn style1">
+                            SEND MESSAGE
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-lg-5">
+            <div class="comp-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.51969568649!2d0.05073209999999999!3d51.540368799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a64c71e99ca3%3A0x9ee5f29224984e22!2sHigh%20St%20N%2C%20London%20E6%202JA%2C%20UK!5e0!3m2!1sen!2sru!4v1671972357783!5m2!1sen!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Contact form section ENDS-->
+
+{% endblock %}

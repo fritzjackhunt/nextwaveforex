@@ -1,0 +1,143 @@
+{% extends 'authenticate/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="container-fluid lefft">
+        <div class="card-top">
+            <div class="d-flex justify-content-between">
+                <span>Welcome Back, <strong>{{ request.user.first_name }} {{ request.user.last_name }}</strong></span>
+                <span>User / <strong>Fund Account</strong></span>
+                <hr>
+            </div>
+            <div class="">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="alert alert-primary" role="alert">
+                            <span class="reeed">Notice!</span>
+
+                            <br>
+
+                            Withdrawals are based on your Account types, your Account Type will determine the amount you can withdraw. Contact payments@metacoinoptions.com for a more detailed description. Ensure to provide your Withdrawal Code when contacting support. If you encounter any issue while withdrawing from your account, please contact payments@metacoinoptions.com for assiastance.
+
+                            Your account will be credited once your payment is confirmed.
+
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Withdraw Funds</p>
+                        <hr>
+                        <div class="alert alert-primary" role="alert">
+                            Depending on your Location, Bank Withdrawal can take up to 5 Business Days to confirm 
+
+                        </div>
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Username</label>
+                                <input type="text" class="form-control" id="formControlReadonly" aria-label="readonly input example" readonly placeholder="{{ request.user.username }}">
+                            </div>
+                            <label for="amount" class="form-label">Withdraw Amount</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">$</span>
+                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" id="amount" placeholder="Enter Amount">
+                                <span class="input-group-text">.00</span>
+                            </div>
+                            <label for="amount" class="form-label">Withdrawal code:</label>
+                            <div class="form-outline">
+                                <input
+                                    class="form-control"
+                                    id="formControlReadonly"
+                                    type="text"
+                                    placeholder="7970"
+                                    aria-label="readonly input example"
+                                    readonly
+                                />
+                            </div>
+                            <br>
+                            <div class="mb-3">
+                                <br>
+                                <label for="exampleFormControlTextarea1" class="form-label">Description.</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Enter description (Optional)"></textarea>
+                            </div>
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button class="btn btn-success" type="button">Submit</button>
+                            </div>
+                        </form>
+                    </div>  
+                </div>
+            </div>
+        </div>
+         
+         <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Withdrawal History</p>
+                        <hr>
+                    </div>
+                    <div class="col-lg-12 d-flex justify-content-between">
+                        <div>
+                            <p>Amount Requested</p>
+                        </div>
+                        <div>
+                            <p>Withdrawal Code</p>
+                        </div>
+                        <div>
+                            <p>Date</p>
+                        </div>
+                        <div>
+                            <p>Withdrawal Type</p>
+                        </div>
+                        <div>
+                            <p>Description</p>
+                        </div>
+                        <div>
+                            <p>Status</p>
+                        </div>
+                    </div>
+                    <div class="form-outline">
+                        <input
+                            class="form-control"
+                            id="formControlReadonly"
+                            type="text"
+                            placeholder="No data available in table"
+                            aria-label="readonly input example"
+                            readonly
+                        />
+                        <br>
+                    </div>
+                    <div class="col-lg-12 d-flex justify-content-between">
+                        <div>
+                            <p>Amount Requested</p>
+                        </div>
+                        <div>
+                            <p>Withdrawal Code</p>
+                        </div>
+                        <div>
+                            <p>Date</p>
+                        </div>
+                        <div>
+                            <p>Withdrawal Type</p>
+                        </div>
+                        <div>
+                            <p>Description</p>
+                        </div>
+                        <div>
+                            <p>Status</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

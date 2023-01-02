@@ -1,0 +1,75 @@
+{% extends 'cash/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <link href="{% static 'css/signin.css' %}" rel="stylesheet">
+
+    <div class="container">
+        {% if messages %}
+
+          {% for message in messages %}
+            <br><br><br>
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+          {% endfor %}
+
+        {% endif %}
+    </div>
+
+     <style>
+
+     body {
+       background: #e8f1ee;
+     }
+        
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+  <body class="text-center">
+    
+    <main class="form-signin">
+      <br><br><br><br>
+      <div class="shadow p-3 mb-5 bg-body rounded">
+        <form action="" method=POST>
+            {% csrf_token %}
+
+            <br>
+
+            <img class="mb-4" src="{% static 'pictures/logo.png' %}" alt="" width="100" height="100">
+            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+            <div class="form-floating">
+              <input type="text" class="form-control" name="username" placeholder="name@example.com">
+              <label for="floatingInput">Username</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control" name="password" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <button class="w-100 btn btn-lg btn-main" type="submit">Sign in</button>
+            <p class="mt-5 mb-3 text-muted">&copy; NEXTWAVE FOREX 2017-2021</p>
+        </form>
+      </div>
+    </main>
+ </body>
+
+    
+
+{% endblock %}

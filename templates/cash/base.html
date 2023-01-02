@@ -1,0 +1,114 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS Bootstrap 5 link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    {% load static %}
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+
+    <!--Swiper CSS File-->
+    <link href="{% static 'css/swiper-bundle.min.css' %}" rel="stylesheet">
+
+    <!-- Our project just needs Font Awesome Free's Solid and Brand files -->
+    <link href="{% static 'fontawesomefree/css/fontawesome.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fontawesomefree/css/brands.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fontawesomefree/css/solid.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fontawesomefree/css/regular.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fontawesomefree/css/light.css' %}" rel="stylesheet" type="text/css">
+
+    <title>NextWave Forex</title>
+</head>
+<body>
+
+    <!--NAVBAR section STARTS-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="{% url 'homepage' %}">NextWave Forex</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'homepage' %}">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'about' %}">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-user-plus"></i> <!-- uses solid style -->
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="{% url 'login' %}">Sign In</a></li>
+                  <li><a class="dropdown-item" href="{% url 'register_user' %}">Sign Up</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!--NAVBAR section ENDS-->
+
+{% block content %}
+
+{% endblock %}
+
+    <!--Footer section STARTS-->
+    <div class="container-fluid" id="footer">
+        <div class="container px-5 py-5">
+          <div class="row">
+            <div class="col-lg-6">
+              <h6>NextWave Forex</h6>
+              <span>Trading on financial markets carries risks. Forex and financial contracts are a complex financial product that are traded on margin. Trading carries a high level of risk since leverage can work both to your advantage and disadvantage. As a result, this type of activity may not be suitable for all investors because you may lose all your invested capital. You should not risk more than you are prepared to lose. Before deciding to trade, you need to ensure that you understand the risks involved and taking into account your investment objectives and level of experience</span>
+  
+              <ul class="social-links mt-4">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+            
+            <div class="col-lg-6">
+  
+            </div>
+          </div>
+  
+          <br>
+          <br>
+          <hr>
+  
+          <div class="row">
+            <div class="col-lg-12" style="text-align:center">
+              <h6>&copy; 2023 NextWave Forex. All rights reserved.</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Footer section ENDS-->
+  
+  
+      <!--JS Bootstrap 5 Link-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+      <!-- Vendor JS Files -->
+      <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
+      <script src="{% static 'js/purecounter.js' %}" type="application/javascript"></script>
+  
+      <!-- Template Main JS File -->
+      <script src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>
